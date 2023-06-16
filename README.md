@@ -1,6 +1,8 @@
 # TugasBesar_PraktikumPemrograman_Kelompok1
 Project Python - Aplikasi Management Mahasiswa
 
+Kelompok 1 - (nama Kelompok)
+
 Ini repository dari Tugas Besar Praktikum Pemrograman
 
 Anggota Kelompok 1 :
