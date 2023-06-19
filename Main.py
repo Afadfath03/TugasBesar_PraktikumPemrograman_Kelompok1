@@ -1,15 +1,17 @@
-def View():
-    #TODO Lihat Data Mahasiswa
-    return 0
+def Lihat(Nim, Nama):
+    for i in range(len(Nim) == len(Nama)):
+        print(f"{Nim[i]}, {Nama[i]}")
+    return -1
 
 def Tambah():
     # TODO Tambah Data Mahasiswa
     return
 
-def Edit():
-    #TODO Edit Data Mahasiswa
-    #Ini diedit oleh Afad
-    return
+def Edit(Nim, Nama):
+    Cari(Nim)
+    if Cari(Nim) != -1:
+        Nama[Cari(Nim)] = input("Nama baru: ")
+    return -1
 
 def Hapus():
     #TODO Hapus Data Mahasiswa
