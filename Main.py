@@ -1,6 +1,6 @@
 def Lihat():
     #TODO Lihat Data Mahasiswa
-    return
+    return 0
 
 def Tambah():
     # TODO Tambah Data Mahasiswa
