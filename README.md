@@ -1,7 +1,7 @@
 # TugasBesar_PraktikumPemrograman_Kelompok1
-Project Tugas Besar Praktikum Pemrograman - Smart Management Student (SMS)
+Project Tugas Besar Praktikum Pemrograman - Student Management Sederhana (SMS)
 
-Kelompok 1 - (nama Kelompok)
+Kelompok 1 - BASIC (Base In Coding)
 
 Anggota Kelompok :
 1. Althafia Defiyandrea Laskanadya Wibowo (2211104011)
