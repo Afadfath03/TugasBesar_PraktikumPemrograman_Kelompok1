@@ -1,4 +1,4 @@
-def Lihat():
+def View():
     #TODO Lihat Data Mahasiswa
     return
 
@@ -8,6 +8,7 @@ def Tambah():
 
 def Edit():
     #TODO Edit Data Mahasiswa
+    #Ini diedit oleh Afad
     return
 
 def Hapus():
@@ -25,9 +26,13 @@ def Urutkan():
 """
 -Menu - Afad
 -Edit (Nama) -Afad
+
 -sorting (berdasarkan nim) -Kevin
+
 -Buat(Nim, Nama) -Noor Alam
+
 -Hapus(berdasarkan Nim) -Althafia
+
 -searching (berdasarkan nim/nama) -Rezky
 """
 
