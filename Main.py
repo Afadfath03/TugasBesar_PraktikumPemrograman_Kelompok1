@@ -25,19 +25,6 @@ def Urutkan():
     #TODO Urutkan Data Mahasiswa
     return
 
-"""
--Menu - Afad
--Edit (Nama) -Afad
-
--sorting (berdasarkan nim) -Kevin
-
--Buat(Nim, Nama) -Noor Alam
-
--Hapus(berdasarkan Nim) -Althafia
-
--searching (berdasarkan nim/nama) -Rezky
-"""
-
 Mahasiswa_Nama = []
 Mahasiswa_Nim = []
 
