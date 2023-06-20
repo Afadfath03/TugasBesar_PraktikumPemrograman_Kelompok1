@@ -18,7 +18,34 @@ def Hapus():
     return
 
 def Cari():
-    #TODO Cari Data Mahasiswa
+def bubble_sort(Nama, Nim):
+    for i in range(len(Nim)):
+        for j in range(len(Nim) - i - 1):
+            if str(Nim[j]).lower() > str(Nim[j+1]).lower():
+                Nim[j], Nim[j+1] = Nim[j+1], Nim[j]
+    return binary_search(Nama, Nim)
+
+def binary_search(Nama, Nim):
+    left = 0
+    right = len(Nim) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+        if str(Nim[mid]).lower() > Nama.lower():
+            right = mid - 1
+        elif str(Nim[mid]).lower() < Nama.lower():
+            left = mid + 1
+        else:
+            print(Nim)
+            print(f"Nim {Nama} berada pada baris {mid}")
+            return mid
+
+    print(f"Nim {Nama} tidak ditemukan")
+    return -1
+
+Nim = []
+Nama = input("Masukkan nim: ")
+bubble_sort(Nama, Nim)
     return
 
 def Urutkan():
