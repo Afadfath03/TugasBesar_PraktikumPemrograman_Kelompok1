@@ -1,3 +1,4 @@
+#Fungsi
 def ReturnMenu():
     input("\ntekan enter untuk kembali ke menu utama")
     return
@@ -11,7 +12,7 @@ def view_mahasiswa():
         print("Belum ada mahasiswa yang terdaftar")
     ReturnMenu()
 
-def add_mahasiswa(jumlah, mahasiswa):
+def tambah_mahasiswa(jumlah, mahasiswa):
     for i in range(jumlah):
         nim = int(input("\nMasukkan NIM: "))
         nama = input("Masukkan Nama Mahasiswa: ")
@@ -35,7 +36,7 @@ def update_mahasiswa(nim):
     print(f"Mahasiswa dengan NIM {nim} tidak ditemukan.")
     ReturnMenu()
 
-def delete_mahasiswa(nim):
+def hapus_mahasiswa(nim):
     #TODO: hapus data mahasiswa berdasarkan NIM
     print(f"Fungsi belum di implementasikan")
     ReturnMenu()
@@ -61,8 +62,10 @@ def sorting_mahasiswa():
     print("Mahasiswa diurutkan berdasarkan NIM.")
     view_mahasiswa()
 
+#Array
 mahasiswa = []
 
+# Menu Utama
 while True:
     print("\n================== MENU UTAMA =====================")
     print("1. Tambah mahasiswa")
@@ -77,7 +80,7 @@ while True:
 
     if pilihan == '1':
         jumlah = int(input("Masukkan jumlah mahasiswa yang akan ditambahkan: "))
-        add_mahasiswa(jumlah, mahasiswa)
+        tambah_mahasiswa(jumlah, mahasiswa)
 
     elif pilihan == '2':
         view_mahasiswa()
@@ -88,7 +91,7 @@ while True:
 
     elif pilihan == '4':
         nim = int(input("Masukkan NIM mahasiswa yang akan dihapus: "))
-        delete_mahasiswa(nim)
+        hapus_mahasiswa(nim)
 
     elif pilihan == '5':
         nim = int(input("Masukkan NIM mahasiswa yang akan dicari: "))
