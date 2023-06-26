@@ -37,8 +37,12 @@ def update_mahasiswa(nim):
     ReturnMenu()
 
 def hapus_mahasiswa(nim):
-    #TODO: hapus data mahasiswa berdasarkan NIM
-    print(f"Fungsi belum di implementasikan")
+    for i in range(len(mahasiswa)):
+        if mahasiswa[i]['nim'] == nim:
+            del mahasiswa[i]
+            print(f"Mahasiswa dengan NIM {nim} telah dihapus.")
+            return
+    print(f"Mahasiswa dengan NIM {nim} tidak ditemukan.")
     ReturnMenu()
 
 def searching_mahasiswa(nim):
