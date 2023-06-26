@@ -9,3 +9,8 @@ Anggota Kelompok :
 3. Afad Fath Musyarod Halim (2211104030)
 4. Noor Alam Fauzan (2211104031)
 5. Muhammad Kevin Maulana (21104078)
+
+File Utama :
+- Main.py (File utama untuk codingan)
+- LapTubes (Laporan Tugas Besar)
+- Link (Berisi Link repository dan GDocs Laporan Tugas Besar)
