@@ -47,7 +47,7 @@ def hapus_mahasiswa(nim):
     print(f"Mahasiswa dengan NIM {nim} tidak ditemukan.")
     ReturnMenu()
 
-def searching_mahasiswa(nim):
+def cari_mahasiswa(nim):
     for data in mahasiswa:
         if data['nim'] == nim:
             print(f"Mahasiswa dengan NIM {nim}:")
@@ -57,7 +57,7 @@ def searching_mahasiswa(nim):
     print(f"Mahasiswa dengan NIM {nim} tidak ditemukan.")
     ReturnMenu()
 
-def sorting_mahasiswa():
+def urutkan_mahasiswa():
     n = len(mahasiswa)
     for i in range(n):
         index = i
@@ -103,10 +103,10 @@ while True:
 
     elif pilihan == '5':
         nim = int(input("Masukkan NIM mahasiswa yang akan dicari: "))
-        searching_mahasiswa(nim)
+        cari_mahasiswa(nim)
 
     elif pilihan == '6':
-        sorting_mahasiswa()
+        urutkan_mahasiswa()
 
     elif pilihan == '7':
         print("Program keluar.")
