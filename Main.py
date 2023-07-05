@@ -1,6 +1,6 @@
 #Fungsi
 def ReturnMenu():
-    input("\ntekan enter untuk kembali ke menu utama")
+    input("\ntekan enter untuk ke menu utama")
     return
 
 def view_mahasiswa():
@@ -12,7 +12,7 @@ def view_mahasiswa():
         print("Belum ada mahasiswa yang terdaftar")
     ReturnMenu()
 
-def tambah_mahasiswa(jumlah, mahasiswa):
+def tambah_mahasiswa(jumlah):
     for i in range(jumlah):
         nim = int(input("\nMasukkan NIM: "))
         nama = input("Masukkan Nama Mahasiswa: ")
@@ -32,6 +32,7 @@ def update_mahasiswa(nim):
         if i['nim'] == nim:
             i['nama'] = nama
             print(f"Mahasiswa dengan NIM {nim} telah diperbarui.")
+            ReturnMenu()
             return
     print(f"Mahasiswa dengan NIM {nim} tidak ditemukan.")
     ReturnMenu()
@@ -39,8 +40,9 @@ def update_mahasiswa(nim):
 def hapus_mahasiswa(nim):
     for i in range(len(mahasiswa)):
         if mahasiswa[i]['nim'] == nim:
-            del mahasiswa[i]
+            mahasiswa.pop(i)
             print(f"Mahasiswa dengan NIM {nim} telah dihapus.")
+            ReturnMenu()
             return
     print(f"Mahasiswa dengan NIM {nim} tidak ditemukan.")
     ReturnMenu()
@@ -63,11 +65,14 @@ def sorting_mahasiswa():
             if mahasiswa[j]['nim'] < mahasiswa[index]['nim']:
                 index = j
         mahasiswa[i], mahasiswa[index] = mahasiswa[index], mahasiswa[i]
-    print("Mahasiswa diurutkan berdasarkan NIM.")
+    print("Mahasiswa telah diurutkan berdasarkan NIM.")
     view_mahasiswa()
 
 #Array
 mahasiswa = []
+
+jumlah = int(input("Masukkan jumlah mahasiswa awal: "))
+tambah_mahasiswa(jumlah)
 
 # Menu Utama
 while True:
@@ -83,9 +88,8 @@ while True:
     pilihan = input("Masukkan pilihan Anda (1-7): ")
 
     if pilihan == '1':
-        jumlah = int(input("Masukkan jumlah mahasiswa yang akan ditambahkan: "))
-        tambah_mahasiswa(jumlah, mahasiswa)
-
+        jmh = int(input("Masukkan jumlah mahasiswa yang akan ditambahkan: "))
+        tambah_mahasiswa(jmh)
     elif pilihan == '2':
         view_mahasiswa()
 
