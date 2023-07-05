@@ -71,8 +71,9 @@ def urutkan_mahasiswa():
 #Array
 mahasiswa = []
 
-jumlah = int(input("Masukkan jumlah mahasiswa awal: "))
-tambah_mahasiswa(jumlah)
+# Apabila mau ditambahkan mahasiswa awal, uncomment 2 baris di bawah ini
+# jumlah = int(input("Masukkan jumlah mahasiswa awal: "))
+# tambah_mahasiswa(jumlah)
 
 # Menu Utama
 while True:
