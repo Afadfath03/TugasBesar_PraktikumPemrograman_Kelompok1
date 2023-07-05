@@ -6,8 +6,8 @@ def ReturnMenu():
 def view_mahasiswa():
     if mahasiswa:
         print("Daftar mahasiswa:")
-        for i in mahasiswa:
-            print(f"NIM: {i['nim']}, Nama: {i['nama']}, Jenis Kelamin: {i['gender']}")
+        for data in mahasiswa:
+            print(f"NIM: {data['nim']}, Nama: {data['nama']}, Jenis Kelamin: {data['gender']}")
     else:
         print("Belum ada mahasiswa yang terdaftar")
     ReturnMenu()
@@ -28,9 +28,9 @@ def tambah_mahasiswa(jumlah):
 
 def update_mahasiswa(nim):
     nama = input("Masukkan Nama Mahasiswa baru: ")
-    for i in mahasiswa:
-        if i['nim'] == nim:
-            i['nama'] = nama
+    for data in mahasiswa:
+        if data['nim'] == nim:
+            data['nama'] = nama
             print(f"Mahasiswa dengan NIM {nim} telah diperbarui.")
             ReturnMenu()
             return
